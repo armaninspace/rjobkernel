@@ -22,9 +22,9 @@
  
 
 #' variables used in functions
-Lsize <- "integer"
-rear <-	"environment"
-Lqueue <- "environment"
+Lsize = "integer"
+rear =	"environment"
+Lqueue = "environment"
 Lsize <<- 0L	
 
 #' A isEmptyQueue Function
