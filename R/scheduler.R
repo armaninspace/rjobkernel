@@ -20,11 +20,22 @@
 #' 
 #' bottom: This method is used to pick element from the bottom of list.
  
+#' Create empty environment Function
+#'
+#' This function allows you to create empty environment.
+#' @keywords environment
+#' @export
+#' @examples
+#' create_emptyenv()                       
+
+create_emptyenv	<- function() {	
+  emptyenv()	
+}
 
 #' variables used in functions
 Lsize <- "integer"
-rear <-	emptyenv()
-Lqueue <- emptyenv()
+rear <-	new.env(parent=create_emptyenv())
+Lqueue <- new.env(parent=create_emptyenv())
 Lsize <<- 0L	
 
 #' A isEmptyQueue Function
@@ -41,18 +52,6 @@ isEmptyQueue <- function() {
   }	else  {	
     return(FALSE) 
   }	
-}
-
-#' Create empty environment Function
-#'
-#' This function allows you to create empty environment.
-#' @keywords environment
-#' @export
-#' @examples
-#' create_emptyenv()                       
-
-create_emptyenv	<- function() {	
-  emptyenv()	
 }
 
 #' Create Node Function
