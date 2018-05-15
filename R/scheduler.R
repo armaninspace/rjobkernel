@@ -104,7 +104,8 @@ enqueue = function(val) {
 dequeue = function() {	
   stackIsEmpty <- isEmptyQueue()	
   if (stackIsEmpty) {	
-    cat("Empty Queue")	
+    #cat("Empty Queue")	
+    stop("Empty Queue")
   }	else {	
     if (identical(NULL, Lqueue$nextnode)) {
       Lsize <<- Lsize-1L	
