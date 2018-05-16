@@ -63,15 +63,15 @@ Node <-	function(val,	node=NULL) {
 enqueue = function(val) {	
   ListIsEmpty <- isEmptyQueue()	
   if (ListIsEmpty) {	
-    Lqueue <<- Node(val)	
-    Lsize <<- Lsize+1L	
-    rear <<- Lqueue	
+    Lqueue <- Node(val)	
+    Lsize <- Lsize+1L	
+    rear <- Lqueue	
   }	else {	
     newNode <- Node(val)	
     assign("nextnode",	newNode,	
           envir	=	rear)	
-    rear <<- newNode	
-    Lsize <<- Lsize+1L			
+    rear <- newNode	
+    Lsize <- Lsize+1L			
   }	
   return(rear$element)
 }
