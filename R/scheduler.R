@@ -19,7 +19,7 @@
 #' dequeue: This method is used to pop/remove element from the list.
 #' 
 #' bottom: This method is used to pick element from the bottom of list.
- 
+Lll <- '' 
 #' Create empty environment Function
 #'
 #' This function allows you to create empty environment.
@@ -33,9 +33,14 @@ create_emptyenv	<- function() {
 }
 
 #' variables used in functions
-Lsize <- "integer"
-rear <-	new.env(parent=create_emptyenv())
-Lqueue <- new.env(parent=create_emptyenv())
+#' rear environment
+#' @export
+rear <-	new.env()
+#' Lqueue environment
+#' @export
+Lqueue <- new.env()
+#' Lsize variable
+#' @export
 Lsize <<- 0L	
 
 #' A isEmptyQueue Function
@@ -104,7 +109,6 @@ enqueue = function(val) {
 dequeue = function() {	
   stackIsEmpty <- isEmptyQueue()	
   if (stackIsEmpty) {	
-    #cat("Empty Queue")	
     stop("Empty Queue")
   }	else {	
     if (identical(NULL, Lqueue$nextnode)) {
