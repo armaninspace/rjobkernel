@@ -1,25 +1,3 @@
-#'@section fields:
-#' List of fields/variables used in methods for lqueue class.
-#' Lsize is used to check/manage the size of queue during jobs execution.
-#' rear & Lqueue used to store nodes of linked list.
-#' 
-#'@section methods:
-#'
-#' isEmptyQueue: This method is used to check linked list/queue is empty or not.
-#' 
-#' create_emptyenv: This method is used to create empty environment.
-#' 
-#' Node: This method is used to initiate a linked list for storing jobs.
-#' @param 'val' stores element/job section of node.
-#' @param 'node' stores pointer to next node. 
-#' 
-#' enqueue: This method is used to populate jobs in list.
-#' @param 'val' used to pass jobs/file path which scheduler will execute.
-#' 
-#' dequeue: This method is used to pop/remove element from the list.
-#' 
-#' bottom: This method is used to pick element from the bottom of list.
-Lll <- '' 
 #' Create empty environment Function
 #'
 #' This function allows you to create empty environment.
@@ -41,7 +19,7 @@ rear <-	new.env()
 Lqueue <- new.env()
 #' Lsize variable
 #' @export
-Lsize <<- 0L	
+Lsize <- 0L	
 
 #' A isEmptyQueue Function
 #'
