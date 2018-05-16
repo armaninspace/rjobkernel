@@ -1,9 +1,9 @@
 library(processx)
 library(rjobscheduler)
 
-enqueue(list(val='/home/rjobs/job1.R'))
-enqueue(list(val='/home/rjobs/job2.R'))
-enqueue(list(val='/home/rjobs/job3.R'))
+enqueue(list(val='/home/jobs/job1.R'))
+enqueue(list(val='/home/jobs/job2.R'))
+enqueue(list(val='/home/jobs/job3.R'))
 
 count <- 1
 
