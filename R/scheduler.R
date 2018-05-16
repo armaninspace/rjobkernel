@@ -10,17 +10,6 @@ create_emptyenv	<- function() {
   emptyenv()	
 }
 
-#' variables used in functions
-#' rear environment
-#' @export rear
-rear <<-	new.env()
-#' Lqueue environment
-#' @export Lqueue
-Lqueue <<- new.env()
-#' Lsize variable
-#' @export Lsize
-Lsize <<- 0L
-
 #' A isEmptyQueue Function
 #'
 #' This function allows you to check queue is empty or not.
