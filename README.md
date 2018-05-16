@@ -15,4 +15,5 @@ For a demo purpose 'example.R' file & 'jobs' directory could be used.
 3) Then execute example.R file using Rstudio and you can see in your jobs directory it will add some .txt file as the processes are
 completed
 
-# Note: replace 'koolmonk' as per your user name
+# Note: 
+replace 'koolmonk' as per your user name
