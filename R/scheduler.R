@@ -12,13 +12,13 @@ create_emptyenv	<- function() {
 
 #' variables used in functions
 #' rear environment
-# @export rear
+#' @export rear
 rear <<-	new.env()
 #' Lqueue environment
-# @export Lqueue
+#' @export Lqueue
 Lqueue <<- new.env()
 #' Lsize variable
-# @export Lsize
+#' @export Lsize
 Lsize <<- 0L
 
 #' A isEmptyQueue Function
