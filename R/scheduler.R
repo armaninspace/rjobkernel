@@ -12,14 +12,14 @@ create_emptyenv	<- function() {
 
 #' variables used in functions
 #' rear environment
-#' @export
-rear <-	new.env()
+# @export rear
+rear <<-	new.env()
 #' Lqueue environment
-#' @export
-Lqueue <- new.env()
+# @export Lqueue
+Lqueue <<- new.env()
 #' Lsize variable
-#' @export
-Lsize <- 0L	
+# @export Lsize
+Lsize <<- 0L
 
 #' A isEmptyQueue Function
 #'
@@ -63,15 +63,15 @@ Node <-	function(val,	node=NULL) {
 enqueue = function(val) {	
   ListIsEmpty <- isEmptyQueue()	
   if (ListIsEmpty) {	
-    Lqueue <- Node(val)	
-    Lsize <- Lsize+1L	
-    rear <- Lqueue	
+    Lqueue <<- Node(val)	
+    Lsize <<- Lsize+1L	
+    rear <<- Lqueue	
   }	else {	
     newNode <- Node(val)	
     assign("nextnode",	newNode,	
           envir	=	rear)	
-    rear <- newNode	
-    Lsize <- Lsize+1L			
+    rear <<- newNode	
+    Lsize <<- Lsize+1L			
   }	
   return(rear$element)
 }
