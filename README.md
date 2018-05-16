@@ -9,7 +9,7 @@ For installation go through following steps
 3) devtools::install_github("KoolMonk/rjobscheduler")
 
 # Demo
-For a demo purpose 'example.R' file & 'jobs' directory could be used.
+For a demo purpose 'example.R' file & 'jobs' directory could be used available in current repository.
 1) Put 'jobs' directory available in current repository at your system's '/home/koolmonk/jobs' location.
 2) Then place the 'example.R' file available in current repository at '/home/koolmonk' location.
 3) Then execute example.R file using Rstudio and you can see in your jobs directory it will add some .txt file as the processes are
