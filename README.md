@@ -1,5 +1,5 @@
-# rjobscheduler
-rjobscheduler is a package used to schedule your jobs/tasks which is dependent on processx (https://github.com/r-lib/processx) 
+# rjobkernel
+rjobkernel is a package used to schedule your jobs/tasks which is dependent on processx (https://github.com/r-lib/processx) 
 package for initiating processes for your jobs/tasks.
 
 # Installation
