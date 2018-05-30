@@ -1,13 +1,13 @@
 library(processx)
-library(rjobscheduler)
+library(rjobkernel)
 
 Lsize <<- 0
 rear <<- new.env()
 Lqueue <<- new.env()
 
-enqueue(list(val='/home/koolmonk/jobs/job1.R'))
-enqueue(list(val='/home/koolmonk/jobs/job2.R'))
-enqueue(list(val='/home/koolmonk/jobs/job3.R'))
+enqueue(list(val='/home/armaninspace/jobs/job1.R'))
+enqueue(list(val='/home/armaninspace/jobs/job2.R'))
+enqueue(list(val='/home/armaninspace/jobs/job3.R'))
 
 count <- 1
 
